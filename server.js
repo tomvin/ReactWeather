@@ -4,11 +4,12 @@ var express = require('express');
 var app = express();
 const PORT = process.env.PORT || 3000;
 
+// For open weather API. Free version doesn't allow https only http. 
 app.use(function (req, res, next) {
-    if(req.headers['x-forwarded-proto'] === 'http') {
-        next();
-    } else {
+    if(req.headers['x-forwarded-proto'] === 'https') {
         response.redirect('http://' + req.hostname + req.url);
+    } else {
+        next();
     }
 });
 
