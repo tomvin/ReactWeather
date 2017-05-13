@@ -10,6 +10,7 @@ var About = (props) => {
       <ul>
         <li><a href="https://facebook.github.io/react/">React.JS</a></li>
         <li><a href="https://openweathermap.org/">Open Weather Map API</a></li>
+        <li><a href="http://foundation.zurb.com/sites/docs/">Foundation</a></li>
       </ul>
     </div>
   )
